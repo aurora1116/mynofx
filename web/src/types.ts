@@ -526,6 +526,8 @@ export interface CoinSourceConfig {
 }
 
 export interface IndicatorConfig {
+  enable_dc50?: boolean;
+  dc50_periods?: number[];
   klines: KlineConfig;
   // Raw OHLCV kline data - required for AI analysis
   enable_raw_klines: boolean;
